@@ -4,7 +4,7 @@ body {
     width: 100%;
 }
 
-.box {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 480px;
@@ -13,7 +13,7 @@ body {
     height: 350px;
     margin-top: 100px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .image{
@@ -110,4 +110,10 @@ button  {
 button:hover {
     background-color: hsl(157, 21%, 17%);
     cursor: pointer;
+}
+
+@media only screen and  (max-width:630px){
+    .container {
+    grid-template-columns: 1fr;
+    }
 }
